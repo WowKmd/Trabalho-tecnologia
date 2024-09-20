@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazinga Filmes</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f3d0f;
+            color: #fff;
+        }
+
+        .entry-page {
+            height: 100vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdC3-rCKeHc-jVQwd1CGJ7MfudcP7OszMdnQ&s');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .entry-box {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGMeIMKbKbHoP3yRzXLzVYBamCNwcaDKq3RAMo59cHWrSofpS_yX-QdcY6OYcbSuRwKwo&usqp=CAU'); 
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            opacity: 0.9; /* Ajuste a opacidade, se necessário */
+        }
+
+        .entry-box h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .entry-box button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #00cc00;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .entry-box button:hover {
+            background-color: #00e600;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .creators {
+            position: absolute;
+            bottom: 20px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .catalog-page {
+            padding: 20px;
+            background-color: #0f3d0f;
+        }
+
+        .catalog-title {
+            color: #fff;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .movie-item {
+            position: relative;
+            background-color: #008000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .movie-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-title {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Página Inicial com Botão "Entrar" -->
+    <div class="entry-page">
+        <img src="https://e1.pngegg.com/pngimages/411/482/png-clipart-jim-parsons-sheldon-cooper.png" class="logo">
+        <div class="entry-box">
+            <h1>Bazinga</h1>
+            <button onclick="window.location.href='catalogo.html'">Entrar</button>
+        </div>
+        <div class="creators">
+            <p>Criadores: Lucas Martins, João Pedro Yuji, Leonardo e Nicolas ian</p>
+        </div>
+    </div>
+
+</body>
+</html>
